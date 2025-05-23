@@ -36,8 +36,8 @@ const greenIcon = new L.Icon({
 
 const getIconBySafetyScore = (score) => {
   if (score == null) return redIcon;
-  if (score >= 0.7) return greenIcon;
-  if (score >= 0.4) return yellowIcon;
+  if (score >= 70) return greenIcon;
+  if (score >= 40) return yellowIcon;
   return redIcon;
 };
 
